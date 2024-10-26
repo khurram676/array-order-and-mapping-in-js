@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1 id="ae"></h1>
+    <button onclick="decs()">for ascending order</button>
+    <button onclick="aecs()">for descending order</button>
+    <script>
+        var number = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+        document.getElementById("ae").innerHTML = number
+        function decs() {
+            number.sort(function (a,b) { return a - b })
+            document.getElementById("ae").innerHTML = number
+        }
+        function aecs() {
+            number.sort(function (a,b) { return b - a })
+            document.getElementById("ae").innerHTML = number
+        }
+    </script>
+</body>
+
+</html>
